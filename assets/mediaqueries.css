@@ -1,0 +1,103 @@
+@media (max-width: 992px){
+    .hero-info {
+        text-align: center;
+        width: 90%;
+        align-items: center;
+    }
+
+    .hero-info h1{
+        display: block;
+        width: 100%;
+    }
+    .hero-info p {
+        max-width: 80%;
+        font-size: 19px;
+    }
+    .cta-buttons {
+        justify-content: center;
+    }
+    .hero-card {
+        display: none;
+    }
+    #aboutus {
+        font-size: 15px;
+    }
+    .info-container h2 {
+        margin-top: 40px;
+        text-align: center;
+        width: 90%;
+        align-items: center;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .item:nth-child(even),
+    .item:nth-child(odd) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .logo {
+        align-items: center;
+    }
+
+    .hero-info h1{
+        display: block;
+        width: 90%;
+    }
+
+    .navbar ul {
+        background-color: var(--background);
+        width: 100%;
+        height: calc(100vh - 100px);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.5s ease-out
+    }
+    .navbar-list a {
+        font-size: 30px;
+    } 
+
+    .navbar i {
+        display: block;
+    }
+
+    #menu-toggle:checked ~ .navbar-list{
+        transform: translateX(0%);
+        transition: all 0.5s ease-in;
+    }
+    .info-container h2 {
+        text-align: center;
+        width: 90%;
+        align-items: center;
+    }
+
+    .info-column {
+        text-align: center;
+        width: 90%;
+        align-items: center;
+    }
+    
+    .buttons {
+        grid-template-columns: repeat(1,1fr);
+        height: 1200px;
+
+    }
+
+    .item:nth-child(even),
+    .item:nth-child(odd) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+}
