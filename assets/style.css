@@ -339,12 +339,29 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:start;
     color: var(--txt-white);
     width: 100%;
     height: 85vh;
 }
 
+#login h1 {
+    font-size: 40px;
+    background: linear-gradient(to top, #f0735a 30%, #399dc1 70%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 900;
+}
+
+.formlog {
+    background: var(--secondary);
+    margin: 5px 0 ;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    text-align: center;
+}
 
 #register {
     margin-top: 100px;
@@ -352,9 +369,39 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     color: var(--txt-white);
     width: 100%;
     height: 85vh;
 }
 
+#register h1 {
+    font-size: 40px;
+    background: linear-gradient(to top, #f0735a 30%, #399dc1 70%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 900;
+}
+
+.formreg {
+    background: var(--secondary);
+    margin: 15px 0 ;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    text-align: center;
+
+}
+
+.button {
+    margin-top: 20px;
+    color: var(--txt-white);
+    background-color: var(--btn-bg);
+    width: 120px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 800;
+}
