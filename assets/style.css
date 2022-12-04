@@ -36,6 +36,29 @@ header {
 
 .logo {
 height: 90%;
+-webkit-animation: slide-left 0.7s ease-in both;
+animation: slide-left 0.7s ease-in both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(80px);
+              transform: translateX(80px);
+    }
+    100% {
+      -webkit-transform: translateX(-20px);
+              transform: translateX(-20px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(80px);
+              transform: translateX(80px);
+    }
+    100% {
+      -webkit-transform: translateX(-20px);
+              transform: translateX(-20px);
+    }
 }
   
 .navbar,
@@ -74,57 +97,6 @@ height: 90%;
     font-weight: 800;
 }
 
-.cart-icon {
-    border: 1px solid var();
-    padding: 12px 18px;
-    border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;
-    color: var(--txt-white);
-    font-size: 30px;
-}
-
-.cart {
-    position: absolute;
-    top: 100px;
-    right: 0;
-    padding: 50px 30px;
-    background: linear-gradient(to top, #121e3c, var(--background));
-    border-left: 1px solid var(--bg-blue);
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    height: calc(100vh - 65px);
-    overflow-y: scroll;
-    z-index: 2;
-    transform: translate(200%);
-    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);  
-}
-
-.cart::-webkit-scrollbar {
-    display: none;
-  }
-  
-.cart h2 {
-    color: var(--txt-white);
-    font-size: 20px;
-    font-weight: 600;
-}
-  
-.cart-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    border: 1px solid var(--bg-blue);
-    border-radius: 10px;
-}
-  
-.cart-item img {
-    height: 65px;
-    width: 65px;
-}
 
 main {
     background: var(--background);
@@ -179,7 +151,11 @@ main {
     font-size: 17px;
     text-align: center;
     font-weight: 800;
+    opacity: 0.7;
+    transition: 0.3s;
 }
+
+.hero-info a:hover {opacity: 1}
   
 .hero-card {
     width: 300px;
@@ -233,6 +209,7 @@ main {
     border-radius: 12px;
     padding: 0 10px;
 }
+
 
 .item {
     border-radius: 1rem;
@@ -343,12 +320,13 @@ footer {
     justify-content:start;
     color: var(--txt-white);
     width: 100%;
-    height: 85vh;
+    height: 83.5vh;
 }
 
 #login h1 {
+    padding: 30px 0;
     font-size: 40px;
-    background: linear-gradient(to top, #f0735a 30%, #399dc1 70%);
+    background: linear-gradient(to top, #f0735a 40%, #399dc1 60%);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -406,4 +384,8 @@ footer {
     font-size: 17px;
     text-align: center;
     font-weight: 800;
+    opacity: 0.6;
+    transition: 0.3s;
 }
+
+.button:hover {opacity: 1}
