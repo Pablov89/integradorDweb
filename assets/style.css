@@ -375,7 +375,7 @@ footer {
 }
 
 .button {
-    margin-top: 20px;
+    margin: 20px 0;
     color: var(--txt-white);
     background-color: var(--btn-bg);
     width: 120px;
